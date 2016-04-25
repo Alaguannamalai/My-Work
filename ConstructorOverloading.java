@@ -1,30 +1,28 @@
-package amazon;
+package com.tcs.training.example;
 
 public class ConstructorOverloading {
-	int std_id;
-	String name;
-	int age;
+	int sso_id, age;
+	String Employee_Name;
 	
-	ConstructorOverloading(int a, String b, int c){
-		std_id = a;
-		name = b;
-		age = c;
-	}
+ConstructorOverloading(int i, int g, String name){
+	sso_id = i;
+	age = g;
+	Employee_Name = name;
+}
 	
-	ConstructorOverloading(int c, String b){
-		name = b;
-		age = c;
-	}
-	
-	void display(){
-		System.out.println(name +" is " +age +" years old " +"and id is " +std_id );
-	}
-	
-	public static void main(String argh[]){
-		ConstructorOverloading ob1 = new ConstructorOverloading(901, "Anna", 23);
-		ConstructorOverloading ob2 = new ConstructorOverloading(22, "Aravind");
-		ob1.display();
-		ob2.display();
-	}
+ConstructorOverloading(int j,String peyar){
+	sso_id = j;
+	Employee_Name = peyar; 
+}
+
+void display(){
+	System.out.println(sso_id+ " " +Employee_Name+ " where age is:" +age );
+}
+public static void main(String args[]){
+	ConstructorOverloading s1 = new ConstructorOverloading(502334614, 23, "Anna");
+	ConstructorOverloading s2 = new ConstructorOverloading(502334611, "Srishti");
+	s1.display();
+	s2.display();
+}
 
 }
