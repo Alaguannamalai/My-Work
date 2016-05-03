@@ -1,15 +1,13 @@
-package com.tcs.training.array;
-
-//We can copy an array to another by the arraycopy method of System class.
+package amazon;
 
 public class ArrayCopy {
+	public static void main(String arga[]) {
+		char[] copyFrom = { 'A', 'n', 'n', 'a', 'm', 'a', 'l', 'a', 'i' };
 
-	public static void main(String args[]) {
-		char[] copyFrom = { 'a', 's', 'h', 'e', 'e', 'p', 'd', 'o', 'l', 'l',
-				'y' };
-		char[] copyTo = new char[5];
+		char[] copyTo = new char[4];
 
-		System.arraycopy(copyFrom, 6, copyTo, 0, 5);
+		System.arraycopy(copyFrom, 0, copyTo, 0, 4);
 		System.out.println(new String(copyTo));
 	}
+
 }
