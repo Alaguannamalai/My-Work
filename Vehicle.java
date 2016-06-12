@@ -1,6 +1,6 @@
 package amazon;
 
-//Instance variable of current class is refered by instance bydefault, 
+//Instance variable of current class is referred by instance bydefault, 
 // but I have to refer parent class instance variable that is why we use 
 //  super keyword to distinguish between parent class instance variable and 
 //   current class instance variable.
