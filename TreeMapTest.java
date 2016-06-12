@@ -8,7 +8,7 @@ public class TreeMapTest {
 
 		TreeMap<Integer, String> tm = new TreeMap<Integer, String>();
 		tm.put(15, "Star");
-		tm.put(20, "maintainence");
+		tm.put(20, "maintenance");
 		tm.put(30, "Final");
 		tm.put(10, "Learn");
 

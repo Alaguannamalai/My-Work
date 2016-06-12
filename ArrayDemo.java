@@ -8,7 +8,7 @@ public class ArrayDemo {
 		
 		while(i<10){
 			number[i] = i+100;
-			// format is a funtion to arrange ouotput in the below given format
+			// format is a function to arrange ouotput in the below given format
 			System.out.format("number[%d] = %d\n", i, number[i]);
 			i = i+1;
 		}
